@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Taskpool</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tasks_title">tasks</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
