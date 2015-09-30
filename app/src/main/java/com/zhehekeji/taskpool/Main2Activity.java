@@ -24,7 +24,7 @@ public class Main2Activity extends FragmentActivity {
     private ViewPager mViewPager;
     private PagerAdapter mPagerAdapter;
     private TabWidget mTabWidget;
-    private String[] addresses = { "first", "second", "third" };
+    private String[] addresses = { "DAY", "WEEK", "MONTH" };
     private Button[] mBtnTabs = new Button[addresses.length];
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -32,6 +32,7 @@ public class Main2Activity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         mTabWidget = (TabWidget) findViewById(R.id.tabWidget1);
+        //底部下划线
         mTabWidget.setStripEnabled(false);
         mBtnTabs[0] = new Button(this);
         mBtnTabs[0].setFocusable(true);
@@ -69,6 +70,7 @@ public class Main2Activity extends FragmentActivity {
         {
             if (v == mBtnTabs[0])
             {
+               //android.support.v4.view.ViewPager选中该项
                 mViewPager.setCurrentItem(0);
             } else if (v == mBtnTabs[1])
             {
